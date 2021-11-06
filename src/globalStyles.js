@@ -145,11 +145,11 @@ export const CustomButtonRoot = styled('button')`
   line-height: 1em;
   cursor: pointer;
   border: none;
-  display: block;
   position: absolute;
   z-index: 2;
   bottom: 0;
   transition: 0.4s;
+  display: ${({ hideMe }) => (hideMe ? 'none' : 'block')};
   opacity: ${({ showGrid }) => (showGrid ? '0' : '1')};
   margin-left: ${({ spotify }) => (spotify ? '16.5em' : '22.45em')};
 
@@ -179,7 +179,7 @@ export const ContainerLogo = styled.div`
   display: block;
   background-color: #ff0;
   z-index: 3;
-  bottom: 0;
+  bottom: 0.01em;
   width: 14.5em;
   opacity: ${({ toggle }) => (toggle ? '0' : '1')};
   cursor: pointer;

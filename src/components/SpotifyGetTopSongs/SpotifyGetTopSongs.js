@@ -115,11 +115,11 @@ const SpotifyGetTopSongs = props => {
                     {showGrid ? (standBy.items.map((song) => (
                         <>
                             <div className="container-for-grid">
-                                <img className="for-grid" src={song.track.album.href === null ? null : song.track.album.images[1].url } alt={"artwork"} />
+                                <img className="for-grid" src={song.track.album.href === null ? null : song.track.album.images[1].url} alt={"artwork"} />
                             </div>
                         </>
                     ))) : (
-                        <s.CustomButtonRoot variant="outlined" onClick={build} disabled={loading} other={true}>Build Grid</s.CustomButtonRoot>
+                        <s.CustomButtonRoot variant="outlined" onClick={build} disabled={loading} other={true} hideMe={!gotPlaylist}>Build Grid</s.CustomButtonRoot>
                     )}
                 </div>)
                 :
