@@ -15,7 +15,7 @@ function generateRandomString(length) {
 }
 
 var client_id = '815a413830104996ac5818ea2ab67772';
-var redirect_uri = 'https://isauljosue.github.io/gridy-spotify/';
+var redirect_uri = 'https://isaul-garcia.github.io/gridy-spotify/';
 
 var state = generateRandomString(16);
 
