@@ -2,15 +2,6 @@ import React, { useEffect } from 'react';
 import GlobalStyle from './globalStyles';
 import SpotifyGetTopSongs from './components/SpotifyGetTopSongs/SpotifyGetTopSongs';
 
-////////////////////////////////////////////////////////////////////
-//bugs + features:
-// *animate
-// *it breaks if theres an offline or unavailable track
-// *what if there are less tracks than 72
-// *it breaks if youre not listening to a playlist
-////////////////////////////////////////////////////////////////////
-
-// const API_KEY = "BQBupRg_tBiIRSfww9Sctk2LlIwHK_l6ZdGZXmFV9jcZVSZ2uTryzM0jIaVFT2SdYz2Ke5Dz9I51KHtLFVxCyRjqb3wiAYE6oqJAxmNlA0hkrAG6KZu_5NMIFcjuiU-5MqH5gtGMfX85X7Oa882TIUd_Dae9s6FV44M";
 const characters ='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
 
 function generateRandomString(length) {
@@ -24,8 +15,7 @@ function generateRandomString(length) {
 }
 
 var client_id = '815a413830104996ac5818ea2ab67772';
-//var client_secret = '9411ef5d23c648f99186411fbf30ad2c';
-var redirect_uri = 'http://localhost:3000/';
+var redirect_uri = 'https://isauljosue.github.io/gridy-spotify/';
 
 var state = generateRandomString(16);
 
