@@ -2,6 +2,15 @@ import React, { useEffect } from 'react';
 import GlobalStyle from './globalStyles';
 import SpotifyGetTopSongs from './components/SpotifyGetTopSongs/SpotifyGetTopSongs';
 
+// whats to fix:
+//
+// remove authorization from url
+// set timer to refresh token after an hour (or to override the error message and prompt user to refresh)
+// first error of 'offline songs' not working at all
+// if theres less than 55, stay still? or duplicate?
+// ? losts of refreshing sometimes to make it work
+// request quota extention from spotify
+
 const characters ='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
 
 function generateRandomString(length) {

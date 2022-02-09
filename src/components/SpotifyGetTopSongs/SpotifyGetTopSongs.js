@@ -86,6 +86,13 @@ const SpotifyGetTopSongs = props => {
         setIsDone(true);
     }
 
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            window.location = `/gridy-spotify/#`;
+        }, 500);
+        return () => clearTimeout(timer);
+      }, []);
+
     return (
         <>
             <s.InstructionsContainer show={showGrid}>

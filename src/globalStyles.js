@@ -133,6 +133,22 @@ const GlobalStyle = createGlobalStyle`
     }
 `
 
+export const ContainerLogo = styled.div`
+  position: absolute;
+  display: block;
+  background-color: #ff0;
+  z-index: 3;
+  bottom: 0.01em;
+  width: 14.5em;
+  opacity: ${({ toggle }) => (toggle ? '0' : '1')};
+  cursor: pointer;
+  transition: 0.4s;
+
+  &:hover {
+    opacity: ${({ toggle }) => (toggle ? '0.4' : '0.9')};
+  }
+`
+
 export const CustomButtonRoot = styled('button')`
   background-color: ${({ spotify }) => (spotify ? '#1ed860' : '#002eff')};
   background-color: ${({ other }) => (other ? '#e600e6' : '')};
@@ -152,7 +168,7 @@ export const CustomButtonRoot = styled('button')`
   display: ${({ hideMe }) => (hideMe ? 'none' : 'block')};
   opacity: ${({ showGrid }) => (showGrid ? '0' : '1')};
   margin-left: ${({ spotify }) => (spotify ? '16.5em' : '22.45em')};
-
+  
   &:hover {
     background-color: ${({ spotify }) => (spotify ? '#1ca14b' : '#031cac')} ;
     background-color: ${({ other }) => (other ? '#b300b3' : '')};
@@ -160,7 +176,7 @@ export const CustomButtonRoot = styled('button')`
   }
 
   &.active {
-    background-color: #004386;
+      border: 1px solid #40f;
   }
 
   &.disabled {
@@ -171,22 +187,6 @@ export const CustomButtonRoot = styled('button')`
   @media screen and (max-width: 991px) {
     min-width: 5.35em;
     opacity: ${({ showGrid }) => (showGrid ? '0.4' : '1')};
-  }
-`
-
-export const ContainerLogo = styled.div`
-  position: absolute;
-  display: block;
-  background-color: #ff0;
-  z-index: 3;
-  bottom: 0.01em;
-  width: 14.5em;
-  opacity: ${({ toggle }) => (toggle ? '0' : '1')};
-  cursor: pointer;
-  transition: 0.4s;
-
-  &:hover {
-    opacity: ${({ toggle }) => (toggle ? '0.4' : '0.9')};
   }
 `
 
