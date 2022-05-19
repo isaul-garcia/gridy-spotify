@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/gridy-spotify/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/gridy-spotify/static/js/main.6f2cd090.chunk.js",
-    "main.js.map": "/gridy-spotify/static/js/main.6f2cd090.chunk.js.map",
+    "main.js": "/gridy-spotify/static/js/main.e79d6eaf.chunk.js",
+    "main.js.map": "/gridy-spotify/static/js/main.e79d6eaf.chunk.js.map",
     "runtime-main.js": "/gridy-spotify/static/js/runtime-main.bf8ac0b5.js",
     "runtime-main.js.map": "/gridy-spotify/static/js/runtime-main.bf8ac0b5.js.map",
     "static/js/2.5552b7fc.chunk.js": "/gridy-spotify/static/js/2.5552b7fc.chunk.js",
@@ -10,12 +10,12 @@
     "index.html": "/gridy-spotify/index.html",
     "static/css/main.6dea0f05.chunk.css.map": "/gridy-spotify/static/css/main.6dea0f05.chunk.css.map",
     "static/js/2.5552b7fc.chunk.js.LICENSE.txt": "/gridy-spotify/static/js/2.5552b7fc.chunk.js.LICENSE.txt",
-    "static/media/gridy.cb93892b.svg": "/gridy-spotify/static/media/gridy.cb93892b.svg"
+    "static/media/gridy.4f9b5340.svg": "/gridy-spotify/static/media/gridy.4f9b5340.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.bf8ac0b5.js",
     "static/js/2.5552b7fc.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.6f2cd090.chunk.js"
+    "static/js/main.e79d6eaf.chunk.js"
   ]
 }
