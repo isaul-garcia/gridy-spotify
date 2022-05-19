@@ -4,12 +4,10 @@ import SpotifyGetTopSongs from './components/SpotifyGetTopSongs/SpotifyGetTopSon
 
 // whats to fix:
 //
-// remove authorization from url
 // set timer to refresh token after an hour (or to override the error message and prompt user to refresh)
-// first error of 'offline songs' not working at all
-// if theres less than 55, stay still? or duplicate?
+// first error of 'offline songs' not working at all / change to other error message
+// change size according to playlist length / for less than 56 '12.5vw' for less than 72 '11.11vw'
 // ? losts of refreshing sometimes to make it work
-// request quota extention from spotify
 
 const characters ='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
 
@@ -24,7 +22,7 @@ function generateRandomString(length) {
 }
 
 var client_id = '815a413830104996ac5818ea2ab67772';
-var redirect_uri = 'https://isaul-garcia.github.io/gridy-spotify/';
+var redirect_uri = 'https://isaul-garcia.github.io/gridy-spotify/#';
 
 var state = generateRandomString(16);
 
